@@ -24,7 +24,7 @@ FROM retirement_titles AS rt
 ORDER BY emp_no ASC, to_date DESC;
 
 --part 3SELECT 
-COUNT(ut.emp_no),ut.title
+SELECT COUNT (ut.emp_no),ut.title
 
 --INTO retiring_titles
 FROM unique_titles as ut
@@ -49,15 +49,3 @@ ON (e.emp_no = t.emp_no)
 WHERE (e.birth_date BETWEEN '1962-01-01' AND '1965-12-31')
 AND (de.to_date = '9999-01-01')
 ORDER BY emp_no;
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
